@@ -14,6 +14,7 @@ class Restaurant(models.Model):
 class Employee(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
+    avatar = models.ImageField(null=True, upload_to="avatar/")
     restaurant = models.ForeignKey(
         Restaurant,
         related_name="employees",

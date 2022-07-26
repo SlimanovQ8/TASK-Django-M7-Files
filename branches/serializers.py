@@ -30,7 +30,7 @@ class EmployeeCreateUpdateSerializer(serializers.ModelSerializer):
 class EmployeeListSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Employee
-        fields = ["id", "first_name", "last_name"]
+        fields = ["id", "first_name", "last_name", "avatar"]
 
 
 class EmployeeDetailSerializer(serializers.ModelSerializer):
